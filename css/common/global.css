@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+body { font-family:Arial,Helvetica,sans-serif,"宋体";font-size:12px;color:#333; background:#fff;}
+.body1{ background:none;}
+.body2{ background:#fff url(../../../images/demo/myBg.png) repeat-x 0 -10px}
+div,form,img,ul,ol,li,dl,dt,dd {margin: 0; padding: 0; border: 0;}
+h1,h2,h3,h4,h5,h6,p { margin:0; padding:0;}
+body,div,ul,li,form,table,ol,dl,dt,dd{margin:0px;padding:0px;list-style:none;border:0px;}
+input,select,textarea{font-size:12px}
+table,td,tr,th{ font-size:12px;}
+table{ border-collapse:collapse; border-spacing:0}
+div{margin:0 auto;}
+em,cite,i{font-style:normal;}
+p{line-height:20px;}
+.vamd *{ vertical-align:middle;}
+a:focus {
+    outline: medium none; this.onfocus=this.blur();
+}
+/* 链接*/
+a{color:#585858; text-decoration:none;}
+a:hover{ color:#c60404; text-decoration:none;}
+.clear {clear:both; height:0px;overflow:hidden;}
+
+/* 字体大小*/
+.f12{ font-size:12px;}
+.f14{ font-size:14px;}
+.f16{ font-size:16px;}
+.f18{ font-size:18px;}
+.f20{ font-size:20px;}
+.f24{ font-size:24px;}
+
+
+/* 字体加粗阴影*/
+.bold{font-weight: bold;}
+.tshadow{text-shadow:black 1px 1px 1px;filter:dropshadow(OffX=1, OffY=1, Color='black', Positive='true');}
+.indent{text-indent:2em;}
+.noprice{text-decoration:line-through;}
+.bline{text-decoration:underline;}
+
+
+/*2011-03-12 add by afei*/
+.clearfix:after {clear:both; height:0; overflow:hidden; display:block; visibility:hidden; content:"."; }
+.posr{ position:relative;}
+
+/*widths+heights*/
+.w385{ width:385px;}
+.w170{ width:170px;}
+.w200{ width:200px;}
+.w380{ width:380px;}
+.w420{ width:420px;}
+.w450{ width:450px;}
+.w600{ width:600px;}
+
+/***弹出框提示样式****/
+.infoDialog,.warnDialog,.errDialog{
+	clear:both;height: 20px;line-height: 20px;
+}
+.infoDialog{background: url("../../images/common/info.png") no-repeat;}
+.warnDialog{background: url("../../images/common/warn.png") no-repeat;}
+.errDialog{background: url("../../images/common/err.png") no-repeat;color: red;}
+.infoDialog span,.warnDialog span,.errDialog span{margin-left: 30px;height: 20px;line-height: 20px;font-size: 12px;font-weight: bold;}
+
+/**前端验证不通过弹出提示层***/
+.error{background: url("../../images/common/error.png") no-repeat;padding-left: 20px;}

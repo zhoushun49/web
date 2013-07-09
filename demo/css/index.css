@@ -1,0 +1,89 @@
+#header ,#navdiv ,#tabdiv ,#footer ,#contentDiv{width:970px;margin:0 auto;}
+/*头部*/
+#header{height:90px;}
+#header .logodiv{float:left;padding-top:30px;}
+#header .logindiv{float:right;padding-top:15px;color:#010101;}
+#header .logindiv button{font-size:14px;border:none;background:url(../image/login.png) no-repeat center;height:22px;width:60px}
+#header .logindiv button:hover{background:url(../image/login_hover.png) no-repeat center;}
+/*导航区域-*/
+.navoutdiv{border-bottom:#555555 solid 5px;}
+#navdiv{height:50px;}
+#navdiv ul{margin-left:200px}
+#navdiv ul li{width:140px;float:left;text-align:center;height:50px;line-height:50px;}
+/*当前选中的菜单采用加上此样式*/
+#navdiv ul  .selectli{background:url(../image/arrowup.png) bottom no-repeat;}
+#navdiv ul .lineli{width:10px;background:url(../image/slant.png) center no-repeat}
+#navdiv ul li a{font-size:14px;color:#010101;font-weight:bold}
+/*广告区域背景*/
+.bannerout{height:640px;}
+.bannerimg{background:url(../image/banner1.png) center no-repeat;height:460px;position:relative;;border-bottom:solid 5px #e7e7e7;}
+.bannerimg .prebanner{position:absolute;left:80px;top:150px;display:block;height:54px;width:14px;background:url(../image/left.png) center no-repeat}
+.bannerimg .bannera{width:970px;height:460px;display:block;margin:0 auto;}
+.bannerimg .nextbanner{position:absolute;right:80px;top:150px;display:block;height:54px;width:14px;background:url(../image/right.png) center no-repeat}
+
+/*导航菜单*/
+#tabdiv{position:relative;top:-160px;margin:0 auto;background:url(../image/contents.png) center no-repeat;height:300px;}
+#tabdiv .tab-head{height:70px;width:970px;padding-top:10px;padding-left:9px;}
+#tabdiv .tab-head a{display:block;float:left;height:70px;line-height:70px;text-align:center;font-size:14px;font-weight:bold}
+.ticker-link{width:238px;background:url(../image/tab_01_normal.png) center no-repeat;color:#6D6B6B;}
+.ticker-link:hover{color:#285CAF}
+.ticker-sel{width:238px;background:url(../image/tab_01_hover.png) center no-repeat;color:#fff;}
+.ticker-sel:hover{color:#fff}
+.flight-link{width:238px;background:url(../image/tab_02_normal.png) center no-repeat;color:#6D6B6B;}
+.flight-link:hover{color:#285CAF;}
+.flight-sel{width:238px;background:url(../image/tab_02_hover.png) center no-repeat;color:#fff;}
+.flight-sel:hover{color:#fff}
+.check-link{width:238px;background:url(../image/tab_03_normal.png) center no-repeat;color:#6D6B6B;}
+.check-link:hover{color:#285CAF;}
+.check-sel{width:238px;background:url(../image/tab_03_hover.png) center no-repeat;color:#fff;}
+.check-sel:hover{color:#fff;}
+.my-link{width:238px;background:url(../image/tab_04_normal.png) center no-repeat;color:#6D6B6B;}
+.my-link:hover{color:#285CAF;}
+.my-sel{width:238px;background:url(../image/tab_04_hover.png) center no-repeat;color:#fff;}
+.my-sel:hover{color:#fff}
+
+.ticker-tab{height:220px;}
+.ticker-tab .form{padding-top:30px;padding-left:110px;}
+.ticker-tab .form th{color:#4B4B4B;font-size:14px;text-align:left;padding:5px;}
+.ticker-tab .form  .cityfrom{width:130px;height:30px;line-height:30px;border:none;color:#555;background:url(../image/text_01.png) center no-repeat;}
+.ticker-tab .form .cityto{width:130px;height:30px;line-height:30px;border:none;color:#555;background:url(../image/text_01_hover.png) center no-repeat;}
+.ticker-tab .form .numtext{width:80px;height:30px;line-height:30px;border:none;background:url(../image/text_03.png) center no-repeat;}
+.ticker-tab .form  .timefrom{width:130px;height:30px;line-height:30px;border:none;color:#555;background:url(../image/text_02.png) center no-repeat;}
+.ticker-tab .form  .timeto{width:130px;height:30px;line-height:30px;border:none;color:#555;background:url(../image/text_02_hover.png) center no-repeat;}
+.search{display:block;width:174px;height:36px;background:url(../image/search.png) center no-repeat}
+.search:hover{background:url(../image/search_hover.png) center no-repeat}
+.flight-tab{height:220px;display:none}
+.check-tab{width:970px;height:220px;display:none}
+.my-tab{height:220px;display:none}
+#contentDiv .leftcontent{float:left;width:600px;margin-bottom:20px;}
+.showimgdiv{padding-bottom:20px;width:580px;height:102px;padding-left:5px;padding-right:5px;}
+.showimgdiv .outdiv{width:543px;height:102px;overflow:hidden;float:left;}
+.showimgdiv .inner-div{float:left;position:relative;width:540px}
+.pre{float:left;display:block;height:103px;width:15px;background:url(../image/banner_left.png) center no-repeat}
+.next{float:left;display:block;height:103px;width:15px;margin-left:5px;background:url(../image/banner_right.png) center no-repeat}
+#contentDiv .leftcontent .city-div span{float:left;display:block;margin-right:10px;}
+#contentDiv .leftcontent .city-div a{display:block;width:41px;height:25px;float:left;margin-right:10px;}
+#contentDiv .leftcontent .city-div .city-sel{background:url(../image/where_hover.png) center no-repeat;text-align:center;color:#fff}
+.routes-div-sh {display:block}
+.routes-div-sh table{background:#E4E4E4;margin-bottom:20px;}
+.routes-div-sh table tr td{height:110px;width:116px;background:#fff;text-align:center;font-size:14px;}
+.routes-div-sh table tr td:hover{background:#2478D6;color:#fff}
+
+.routes-div-hz {display:none}
+.routes-div-hz table{background:#E4E4E4;margin-bottom:20px;}
+.routes-div-hz table tr td{height:110px;width:116px;background:#fff;text-align:center;font-size:14px;}
+.routes-div-hz table tr td:hover{background:#2478D6;color:#fff}
+#contentDiv .leftcontent .div1{float:left}
+#contentDiv .leftcontent .div2{float:left;margin-left:60px;}
+ .imgdiv{border:solid 3px #CECECE;width:254px;margin-top:10px;margin-bottom:10px;}
+.title{width:250px;height:50px;overflow:hidden;}
+#contentDiv .rightcontent{float:left;width:350px;margin-left:20px;}
+#contentDiv .rightcontent .noticea{display:block;background:url(../image/arrowhead.png) left no-repeat;padding-left:15px;font-size:14px;font-weight:bold;color:#010101}
+#contentDiv .rightcontent .contentp{height:50px;text-indent:2em;color:#6A6A6A}
+
+/*底部*/
+.footerout{padding:10px;border-top:#E7E7E7 solid 1px}
+#footer p{text-align:center;}
+#footer p a{color:#555;margin:5px;}
+#footer .footp{color:#8C8C8B}
+

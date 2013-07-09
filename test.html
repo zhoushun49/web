@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="gbk"/>
+	<link rel="stylesheet" href="css/common/global.css" />
+	<script src="script/common/trip-config-3.5.1.js"></script>
+	<link rel="stylesheet" href="css/search/search-jipiao.css" />
+	<script src="script/common/kissy/kissy.js" type="text/javascript" ></script>
+	<script src="script/common/kissy/kissy-config.js" type="text/javascript"></script>
+	<script>KISSY.use("loong/common", function(S, common){
+		common.openWarnDialog("test");
+	});</script>
+//搜索需要添加的模块222
+
+<style>
+	.demo .lazytab .hd .city-tab {
+	    left: 243px;
+	    position: absolute;
+	    top: 0;
+	}
+</style>
+</head>
+
+<body style="padding: 3%;" class="demo">
+<form>
+<input data-check="{regex:[/\S{6,30}/,'密码必须是6~30位']}" type="text" name="asd" id="asd">
+</form>
+    <h2>搜索样式4</h2>
+    <!-- 旅行搜索所有搜索框横向 需要引用这个css文件 -->
+    <div class="search-md search-md-jipiao" id="J_search_tab3">
+        <ul class="hd tab-nav">
+            <li class="first-node current">国内机票</li>
+        </ul>
+
+       <div class="search-content tab-content clearfix">
+            <div class="search-posbox has-trans">  
+                <div class="tab-pannel has-trans">
+                    <form action="" method="get" autocomplete="off" id="J_jipiao_form3">
+                        <ul class="search-type">
+                            <li><input type="radio" class="J_type_radio" name="tripType" value="0" id="J_type_radio1" checked> <label for="J_type_radio1">单程</label></li>
+                            <li><input type="radio" class="J_type_radio" name="tripType" value="1" id="J_type_radio2"> <label for="J_type_radio2">往返</label></li>
+                        </ul>
+                        <ul class="search-condition">
+                            <li>
+                                <label for="J_jipiao_depCity3">出发：</label>
+                                <div class="yui3-acinput-box"><s class="yui3-acinput-icon"></s><input type="text" placeholder="出发城市" id="J_jipiao_depCity3" class="search-input required yui3-aclist-input J_TripCityInput" name="depCityName" data-trade="J_jipiao_arrCity3" aria-autocomplete="list" aria-expanded="false" autocomplete="off" x-webkit-speech="x-webkit-speech"></div>
+                                <input type="hidden" id="J_jipiao_depCity_code3" name="depCity" value="BJS" data-trade="J_jipiao_arrCity_code3">
+                            <div class="yui3-aclist-aria" aria-live="polite" role="status"></div></li>
+                            <li>
+                                <label for="J_jipiao_depDate3">出发时间：</label>
+                                <div id="J_jipiao_depDateBox3" class="cal-input fl">
+                                    <input type="text" data-autotab="J_jipiao_endDate3" placeholder="yyyy-mm-dd" id="J_jipiao_depDate3" class="search-input required J_DateInput" maxlength="10" name="depDate" autocomplete="off">
+                                    <span class="week b"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="J_jipiao_arrCity3" >到达：</label>
+                                <div class="yui3-acinput-box"><s class="yui3-acinput-icon"></s><input type="text" placeholder="到达城市" id="J_jipiao_arrCity3" class="search-input required yui3-aclist-input J_TripCityInput" name="arrCityName" aria-autocomplete="list" aria-expanded="false" autocomplete="off" x-webkit-speech="x-webkit-speech"></div>
+                                <input type="hidden" id="J_jipiao_arrCity_code3" name="arrCity" value="DLC">
+                            <div class="yui3-aclist-aria" aria-live="polite" role="status"></div></li>
+                            <li class="search-backitem disabled">
+                                <label for="J_jipiao_endDate3">返程时间：</label>
+                                <div id="J_jipiao_endDateBox3" class="cal-input fl">
+                                    <input type="text" placeholder="yyyy-mm-dd" id="J_jipiao_endDate3" class="search-input J_endDate J_DateInput" maxlength="10" name="arrDate" autocomplete="off">
+                                    <span class="week e"></span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="search-trade"><a target="_self" href="javascript:void(0)">互换出发到达城市</a></div>
+                        <input type="submit" value="搜索航班" class="search-submit J_btn">
+                    </form>
+                </div>
+                
+                
+
+            </div>
+        </div>
+        </div>
+        <script type="text/javascript">
+            YTRIP.use('trip-autocomplete-v2', 'trip-search-form', 'trip-calendar', 'trip-slide',
+                function(Y) {
+                    Y.on('available',
+                        function() {
+                            //搜索切换
+                            var searchTab = new Y.Slide('J_search_tab3', {
+                                autoSlide: false,
+                                eventype: 'click',
+                                effect: 'none',
+                                selectedClass:'current'
+                            });
+
+                            //国内机票搜索
+                            var depJipiaoAc = new Y.TripAutoComplete({
+                                inputNode: '#J_jipiao_depCity3',
+                                codeInputNode: '#J_jipiao_depCity_code3',
+                                createIcon: true,
+                                  source : 'http://s.jipiao.trip.taobao.com//city_search.do?callback={callback}&lines=10&q=',
+                                  resultListLocator : Y.TripAutoComplete.neConfig.resultListLocator,
+                                  resultFormatter : Y.TripAutoComplete.neConfig.resultFormatter
+                            });
+                            var arrJipiaoAc = new Y.TripAutoComplete({
+                                inputNode: '#J_jipiao_arrCity3',
+                                codeInputNode: '#J_jipiao_arrCity_code3',
+                                createIcon: true,
+                                  source : 'http://s.jipiao.trip.taobao.com//city_search.do?callback={callback}&lines=10&q=',
+                                  resultListLocator : Y.TripAutoComplete.neConfig.resultListLocator,
+                                  resultFormatter : Y.TripAutoComplete.neConfig.resultFormatter
+                            });
+                            var jipiaoDate = new Y.TripCalendar({
+                                beginNode: '#J_jipiao_depDateBox3',
+                                endNode: "#J_jipiao_endDateBox3",
+                                isWeek: true,
+                                isFestival: true,
+                                limitBeginDate: new Date()
+                            });
+                            var jipiaoFormAction = new Y.SearchForm({
+                                node: '#J_jipiao_form3',
+                                'defaultCity': '#J_jipiao_depCity3',
+                                'storage': true
+                            });
+                        },
+                        '#J_search_tab3');
+                });
+        </script>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,145 @@
+
+    /*
+*公用样式 by shuke.cl
+* filename : trip-global.css
+*/
+.w990{width:990px;margin:0 auto; }
+.w950{width:950px;margin:0 auto; }
+.hide , .hidden{display:none;}
+#site-nav-bd{width:990px; }
+.fl{float:left; }
+.fr{float:right; }
+.txt-shadow{text-shadow:1px 1px 0 #026383;filter:progid:DXImageTransform.Microsoft.Shadow(color=#026383,direction=135,strength=1);zoom:1;}
+a{text-decoration:none;color:#0092d2;}/* 链接*/
+a:hover{text-decoration:underline;color:#f60;}
+.price , a.price ,.t-price , a.t-price {color:#f60;font-weight:bold;font-family: tahoma,arail,sim-sun;}
+.t-price b{font-weight: normal;font-family: arial;}
+a.price-icon , .price-icon{font-family: arial,verdana;color:#f60;}
+a.price-icon em,.price-icon em{font-weight: bold;font-family:tahoma,arail;}
+
+#page,#header,#content,#footer{margin-left:auto;margin-right:auto;}
+.trip-placeholder{color:#999;}/*placeholer样式*/
+#content{width:990px;margin-top:10px;}
+.i-block{display:inline-block;_display:inline;}
+.shadow{
+	*zoom:1;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* Opera 10.5, IE 9.0 */
+	*filter:progid:DXImageTransform.Microsoft.Shadow(color=#777777,direction=135,strength=3);
+}/*pub-1|2012-08-21 16:21:36*/.trip-layout{margin-top:10px;}.col-1{float:left;width:490px;}.col-2{float:right;width:490px;}.search-md .search-tab li,.search-md .tit,.search-tab li s,.flagship-md .flagship-bar a,.flagship-md .tab-pannel a,.arr-up,.service-item .service-btn s,.service-plugin,.chanelbtn-md a s,.chanelbtn-md a span,.help-md .help-info s,.link-md h2,.special-hotel s,.search-md .hd,.search-module .hd,.service-icon s,.feedback-btn{background-image:url(http://img04.taobaocdn.com/tps/i4/T1GB5MXhteXXXXXXXX-1750-600.png);background-repeat:no-repeat;}.loading{width:100%;height:100%;background:url(http://a.tbcdn.cn/app/tps/img/loading.gif) no-repeat center center;}.search-md{border:1px solid #c4e6f1;}.search-md-content{border:2px solid #78b1c8;background:#fff;}.search-md .hd{border-bottom:1px solid #d9f0f8;height:31px;background-position:-250px -150px;}.search-md .tit{padding:8px 15px 0;text-indent:-10000px;background-position:15px 5px;width:200px;}.search-md .bd{padding:1px;}.search-md input{vertical-align:-2px;}.search-md .search-tab{float:left;width:141px;background-color:#d9f0f8;height:250px;background-position:0 -100px;}.search-md .search-tab li{position:relative;line-height:36px;padding-left:58px;font-size:14px;font-weight:bold;background-position:0 -100px;height:37px;cursor:pointer;}.search-md .search-tab li s{position:absolute;width:29px;height:29px;left:16px;top:4px;}.search-md .search-tab li.last{background-position:1000px 1000px;}.search-md .search-tab li a{color:#2174ad;}.search-md .search-tab li.selected{background-position:0 -50px;height:43px;line-height:38px;margin-top:-1px;}.search-md .search-tab li.selected a{color:#f60;}.search-md .search-content{float:left;width:340px;height:247px;position:relative;}li#search-tab-jipiao s{background-position:-150px -50px;}li#search-tab-jipiao.selected s{background-position:-189px -50px;}li#search-tab-ijipiao s{background-position:-150px -89px;}li#search-tab-ijipiao.selected s{background-position:-189px -89px;}li#search-tab-jiudian s{background-position:-150px -128px;}li#search-tab-jiudian.selected s{background-position:-189px -128px;}li#search-tab-menpiao s{background-position:-150px -167px;}li#search-tab-menpiao.selected s{background-position:-189px -167px;}li#search-tab-dujia s{background-position:-150px -206px;}li#search-tab-dujia.selected s{background-position:-189px -206px;}li#search-tab-zuche s{background-position:-150px -245px;}li#search-tab-zuche.selected s{background-position:-189px -245px;}.search-input,.search-submit,.search-trade a{background:url(http://img02.taobaocdn.com/tps/i2/T122NIXoBAXXXXXXXX-200-200.png) no-repeat;}.search-md .search-tit{float:left;width:65px;line-height:26px;}.search-md .cal-input{float:left;}.search-trade{width:21px;height:43px;position:absolute;left:296px;top:25px;overflow:hidden;}.search-trade a{width:21px;height:43px;background-position:0 -50px;display:block;text-indent:-10000px;overflow:hidden;}.search-trade a:hover{background-position:-50px -50px;}.search-form{height:232px;background:#fff;}.search-form fieldset{padding:10px 0 0 32px;}.search-submit{position:absolute;left:203px;top:195px;width:85px;height:31px;border:0;text-indent:-10000px;cursor:pointer;}.search-submit:hover{background-position:-86px 0;}.search-form li{line-height:normal;padding:5px 0 5px 8px;*padding:4px 0 4px 8px;clear:both;*zoom:1;}.search-form li:after{content:'\0020';display:block;height:0;clear:both;}.search-form li .cal-input{_margin-left:3px;_display:inline;}.search-form li.disabled{color:#000;}.search-form li.disabled input{color:#999;}.search-input{line-height:18px;padding:3px;height:18px;border:1px solid #dcdcdc;border-top-color:#afafaf;border-left-color:#afafaf;background-position:0 -100px;width:178px;outline:none;}input:-webkit-input-placeholder{color:#999;}input:-moz-placeholder{color:#999;}.flight-type-radio{color:#333;cursor:pointer;}.flight-type-radio.selected{background:#e1f0f9;display:inline-block;padding:2px 3px;border-radius:3px;}.flight-type-radio input{margin:0 3px;}.search-form li.search-lastitem{padding:22px 0 0 8px;}.search-jiudian li.search-lastitem{padding-top:9px;}.search-jiudian-select{width:185px;padding:3px;}.hotel-location-switch{margin-bottom:5px;}.search-form li.hotel-map-search{padding:20px 0 0 90px;}.hotel-location-switch label{margin-right:20px;}.hotel-location-switch input{margin-right:3px;}.search-jiudian .yui3-acinput-box{overflow:hidden;}.special-hotel s{display:inline-block;width:16px;height:16px;background-position:-500px -300px;vertical-align:-3px;margin-right:3px;}.search-hot{padding:0 8px 10px;}.search-hot dd{float:left;margin-right:10px;}.search-hot dd.addr-item{width:97px;}.search-menpiao ul,.search-dujia ul,.search-zuche ul{border-top:1px solid #e8e8e8;width:270px;padding-top:10px;}.search-zuche-hot{height:128px;line-height:28px;padding:0 8px;}.search-zuche-hot a{padding:0 3px;}.i-slide{position:relative;width:490px;height:290px;overflow:hidden;}.i-slide img{width:490px;height:290px;}.i-slide .tab-nav{position:absolute;right:10px;bottom:10px;z-index:2;}.i-slide .tab-nav li{float:left;background-color:#FDF1D4;border:1px solid #FEBF90;width:16px;height:16px;line-height:16px;text-align:center;margin:0 1px;cursor:pointer;}.i-slide .tab-nav li a,.i-slide .tab-nav li a:hover{color:#D94B01;}.i-slide .tab-nav li.selected{background-color:#FE8B18;font-weight:bold;border-color:#F27602;width:16px;height:16px;line-height:16px;overflow:hidden;padding:0;}.i-slide .tab-nav li.selected a,.i-slide .tab-nav li.selected a:hover{color:#fff;text-decoration:none;}.i-slide .tab-content{height:290px;overflow:hidden;width:490px;overflow:hidden;z-index:1;}.flagship-md .flagship-bar a,.flagship-md .tab-pannel a{background-image:url(http://img02.taobaocdn.com/tps/i2/T1509EXhVXXXXXXXXX-750-600.png);background-repeat:no-repeat;}.flagship-md{background:#f5f5f5;border:1px solid #e8e8e8;height:70px;overflow:hidden;}.flagship-md h2{float:left;color:#0e5788;padding:16px 0 0 10px;font-weight:bold;font-size:14px;width:34px;line-height:18px;}.flagship-md h2 span{display:block;width:16px;float:left;}.flagship-md .flagship-bar{float:left;width:16px;height:49px;_display:inline;margin:10px 5px 0;}.flagship-md .flagship-bar a{background-position:0 -150px;display:block;height:49px;width:16px;text-indent:-10000px;overflow:hidden;}.flagship-md .flagship-bar a:hover{background-position:0 -200px;}.flagship-md .right-bar{float:right;margin-left:0;}.flagship-md .right-bar a{background-position:-16px -150px;}.flagship-md .right-bar a:hover{background-position:-16px -200px;}.flagship-md .tab-content{float:left;width:885px;zoom:1;padding:4px 0 0 0;position:relative;overflow:hidden;height:61px;}.flagship-md .tab-pannel{float:left;_display:inline;margin:0 5px;width:64px;height:61px;overflow:hidden;}.flagship-md .tab-pannel a{width:64px;height:56px;display:block;text-align:center;padding-top:5px;color:#404040;background-position:10000px 10000px;}.flagship-md .tab-pannel a:hover{background-position:-50px -150px;text-decoration:none;color:#f60;}.flagship-md .tab-pannel img{width:56px;height:30px;}.home-md{margin-top:10px;}.home-md .hd{height:30px;padding:0 10px;background:#e4f7ff;position:relative;border-bottom:2px solid #bad7e8;}.home-md .hd h2{float:left;line-height:28px;font-size:14px;font-weight:bold;padding:2px 8px 0 0;}.home-md .hd h2,.home-md .hd h2 a{color:#0e5788;}.home-md .hd h2 a:hover,.home-md .hd .tab-nav li a:hover{color:#f60;}.home-md .hd .more{float:right;line-height:1;padding-top:11px;}.home-md .hd .city-tab{position:absolute;top:0;left:120px;}.home-md .hd .tab-nav{float:left;}.home-md .hd .tab-nav li{float:left;margin:5px 2px 0;line-height:22px;height:27px;}.home-md .hd .tab-nav li a{padding:0 5px;color:#404040;}.home-md .hd .tab-nav li a:hover{color:#f60;}.home-md .hd .tab-nav li.cur{background:#fff;border:1px solid #bad7e8;border-width:2px 1px 0 1px;margin-top:3px;}.home-md .hd .tab-nav li.cur a{color:#f60;font-size:14px;font-weight:bold;}.home-md .bd{border:1px solid #d0e5f1;border-width:0 1px 1px;padding:20px;}.list-img-box{line-height:22px;}.list-img-box .a-img img{display:none;}.list-img-box a:hover{color:#f60;text-decoration:none;}.list-img-box a:hover span.fr{text-decoration:none;}.list-img-box .arr-up{width:13px;height:6px;overflow:hidden;margin:-6px 0 0 4px;position:relative;background-position:0 -300px;display:none;}.list-img-box-show{padding-bottom:5px;padding-top:5px;}.list-img-box-show a{color:#404040;}.list-img-box-show a:hover{color:#f60;}.list-img-box-show .img-box-item{background:#f1f1f1;}.list-img-box-show .arr-up{display:block;}.list-img-box-show .a-img{display:block;overflow:hidden;}.list-img-box-show .a-img img{display:block;}.img-box-item{overflow:hidden;zoom:1;padding:0 3px;}.img-box-item a{display:block;zoom:1;}.img-box-item span{cursor:pointer;}.img-box-item a:hover span.fr{text-decoration:none;color:#808080;}.img-box-item .price{font-size:12px;padding:0 2px;}.img-box-item .fr{color:#808080;}.group-md .group-buy,.help-md .w990{background:url(http://img01.taobaocdn.com/tps/i1/T1EJaVXmFeXXXXXXXX-400-300.png) no-repeat;}.help-md{background:#039FCE;}.help-md .w990{background-position:0 -46px;padding:20px 0;position:relative;}.help-md,.help-md a{color:#fff;}.help-md a:hover{color:#fff;}.help-md .help-item{float:left;border-right:1px solid #3593b6;height:94px;overflow:hidden;width:132px;padding:0 0 0 24px;line-height:1.67;}.help-md .help-item dt{padding:0 0 5px 0;font-weight:bold;}.help-md .help-item-first{padding-left:285px;}.help-md .help-info{padding:0 0 0 20px;float:left;}.help-md .help-info dd{line-height:normal;padding:3px 0;}.help-md .help-info s{display:inline-block;width:18px;height:18px;background-position:-550px 0;overflow:hidden;margin-right:5px;vertical-align:middle;}.help-md .help-info s.s2{background-position:-550px -50px;}.help-md .help-info s.s3{background-position:-550px -100px;}.help-md .help-info a span{cursor:pointer;}.help-md .more-info span.info-text,.help-md .more-info span.info-icon,.help-md .add-ww{background:url(http://img02.taobaocdn.com/tps/i2/T1mf5VXb8XXXXXXXXX-500-500.png) no-repeat;}.help-md .trip-user{border-right:0;width:160px;overflow:visible;}.help-md .add-ww{width:70px;height:19px;float:left;background-position:0 0;}.help-md .more-info{position:relative;float:left;cursor:pointer;}.help-md .more-info .info-icon{display:none;}.help-md .more-info:hover{display:block;text-decoration:none;}.help-md .more-info:hover .info-icon{display:block;position:absolute;left:-70px;top:20px;width:230px;height:203px;background-position:0 -29px;}.help-md .add-info{padding-top:5px;}.help-md .more-info span.info-text{display:block;width:50px;background-position:-78px 0;margin-left:5px;}.link-md h2{float:left;width:65px;height:57px;text-indent:-10000px;background-position:-500px -200px;}.link-md ul{float:left;width:924px;height:55px;border:1px solid #d8d8d8;border-left:none;}.link-md li{float:left;border-right:1px solid #d8d8d8;margin:5px 0 0 15px;_display:inline;width:154px;height:44px;padding:0 15px 0 0;}.link-md li img{width:154px;height:44px;}.link-md li.last{border:none;}.addFkMd{position:relative;}a.feedback-btn{background:url("http://img03.taobaocdn.com/tps/i3/T1A5GgXkpfXXXXXXXX-750-600.png") no-repeat scroll -550px -300px transparent;display:block;height:77px;overflow:hidden;position:absolute;right:-24px;text-indent:-10000px;top:0;width:24px;}/*pub-1|2012-09-05 19:38:49*/.lazytab{margin-top:10px;}.lazytab .hd{height:30px;padding:0 10px;background:#e4f7ff;position:relative;border-bottom:2px solid #bad7e8;}.lazytab .hd .tab-name{float:left;line-height:28px;font-size:14px;font-weight:bold;padding:2px 8px 0 0;}.lazytab .hd .tab-name,.lazytab .hd .tab-name a{color:#0e5788;}.lazytab .hd .tab-name a:hover,.lazytab .hd .tab-nav li a:hover{color:#f60;}.lazytab .hd .more{float:right;line-height:1;padding-top:11px;}.lazytab .hd .city-tab{position:absolute;top:0;left:120px;}.lazytab .hd .tab-nav{float:left;}.lazytab .hd .tab-nav li{float:left;margin:5px 2px 0;line-height:22px;height:27px;}.lazytab .hd .tab-nav li a{padding:0 5px;color:#404040;}.lazytab .hd .tab-nav li a:hover{color:#f60;}.lazytab .hd .tab-nav li.cur{background:#fff;border:1px solid #bad7e8;border-width:2px 1px 0 1px;margin-top:3px;}.lazytab .hd .tab-nav li.cur a{color:#f60;font-size:14px;font-weight:bold;}.lazytab .bd{border:1px solid #d0e5f1;border-width:0 1px 1px;padding:20px;}.lazytab .bd .tab-pannel{overflow:hidden;}.lowprice .round-arr{background:url("http://img02.taobaocdn.com/tps/i2/T13HRWXXXHXXXXXXXX-100-12.png") no-repeat scroll 0 0 transparent;display:inline-block;height:7px;line-height:7px;margin:3px 3px 0;overflow:hidden;width:9px;*height:12px;_vertical-align:middle;zoom:1;}.lowprice .price{color:#F60;font-family:tahoma,arail,sim-sun;font-weight:bold;}.lowprice .hide,.lowprice .hidden{display:none;}.lowprice .loading{background:url("http://a.tbcdn.cn/app/tps/img/loading.gif") no-repeat scroll center center transparent;height:100%;width:100%;}.lowprice .route{float:left;display:inline;}.lowprice .lowprice-item{border-bottom:1px dashed #E1E1E1;float:left;display:inline;margin:0 12px 0 0;overflow:hidden;padding:2px 0;width:218px;}.lowprice .wrap-box{float:left;display:inline;}.lowprice .link,.lowprice .link:hover{text-decoration:none;}.lowprice .link:hover{background:#def1fa;}.lower-days .route{color:#404040;line-height:32px;overflow:hidden;padding-left:3px;white-space:nowrap;width:30%;}.lower-days .link{color:#808080;display:block;height:28px;line-height:1;padding-top:4px;text-align:center;width:45px;}.lower-days .price{display:block;font-family:Arial;}.lower-days .date{font-size:11px;}.oneway-days .lowprice-item{width:30%;}.lower-roundway .route{overflow:hidden;padding-left:3px;white-space:nowrap;width:113px;}.lower-roundway .date{color:#808080;width:100px;}.lower-roundway .price{text-align:right;width:55px;}.lower-roundway .discount{text-align:right;width:36px;}.oneway-discount .link{display:inline-block;line-height:24px;padding:2px;}.oneway-discount .date{color:#808080;padding:0 10px;}.oneway-discount .price{display:inline-block;font-size:12px;width:42px;color:#F60;}.oneway-discount .discount{color:#404040;}.roundway-discount .lowprice-item{width:290px;}.roundway-discount .link{color:#404040;cursor:pointer;display:block;line-height:normal;padding:7px 4px 7px 6px;text-decoration:none;}.roundway-discount .route,.roundway-discount .price,.roundway-discount .discount,.roundway-discount .date{display:inline-block;overflow:hidden;}.roundway-discount .hd .city-tab{left:120px;}.roundway-discount .route{width:110px;}.roundway-discount .date{color:#808080;width:96px;}.roundway-discount .price{color:#F60;font-family:arial;width:60px;}.roundway-discount .discount{text-align:right;width:36px;}.roundway-discount .discount-num{color:#f60;}.iround .lowprice-item{width:290px;}.iround .link{color:#404040;display:block;height:18px;padding:3px 0;}.iround .link:hover{background:#E3E3E3;}.iround .route{overflow:hidden;padding-left:3px;white-space:nowrap;width:113px;display:inline;}.iround .price{display:inline;text-align:right;width:55px;float:left;}.iround .date{color:#808080;width:100px;float:left;display:inline;}.iround-days .link{float:left;display:inline;width:100%;}.iround-days .price{display:block;}.iround-days .route{color:#404040;line-height:normal;padding-top:7px;width:102px;}.iround-days .wrap-box{color:#808080;display:block;height:28px;line-height:1;padding-top:4px;text-align:center;width:80px;}
+
+.search-md-jipiao{
+        margin:0  auto;
+        width:95%;
+        border:0;
+    }
+    .search-md-jipiao .hd{
+        height: 30px;
+        font-size: 14px;
+        border-bottom: 1px solid #E5E5E5;
+        background: #fff;
+        _overflow: hidden;
+    }
+    .search-md-jipiao .hd li{
+        float: left;
+        margin-top: 5px;
+        height: 25px;
+        line-height: 25px;
+        padding: 0px 15px;
+         font-weight: bold;
+        cursor: pointer;
+         color:#0e5788;
+    }
+    .search-md-jipiao .hd .current {
+        position: relative;
+        margin-top: 3px;
+        height: 27px;
+        background: #F5F5F5;
+        border: 1px solid #E5E5E5;
+        border-bottom: 0px;
+    }
+    .search-md-jipiao .hd .first-node {
+        margin-left: 25px;
+    }
+    .search-md-jipiao .search-content{
+        float:none;
+        width:auto;
+        height:auto;
+        padding:10px;
+        background:#F5F5F5; 
+        border:1px solid #E5E5E5; 
+        border-top:0;
+        border-bottom-color:#C1C1C1;
+    }
+    .search-md-jipiao .search-type{
+        float:left;
+        width:16%;
+         line-height:25px;
+        text-align:center;
+        border-right:1px solid #E5E5E5;
+    }
+    .search-md-jipiao .search-content li{
+        float:left;
+        width:100%;
+        margin:4px 0px;
+    }
+    
+    .search-md-jipiao .search-condition{
+        float: left;
+        width:64%;
+        padding-left: 30px;
+    }
+
+    .search-md-jipiao .search-condition li{
+        width:48%;
+    }
+    .search-md-jipiao .search-condition label{
+        float:left;
+          line-height:25px;
+    }
+    .search-md-jipiao .search-input {
+        padding: 3px 25px 3px 3px;
+        width: 150px;
+    }
+    .search-md-all .cal-input .search-input {
+        padding-right: 3px;
+        width: 172px;
+    }
+    .search-md-jipiao .search-trade{
+        left:415px;
+    }
+    .search-md-jipiao  .search-trade a{
+        background:url("http://img03.taobaocdn.com/tps/i3/T1h9vOXgxbXXX.9Mjk-96-100.png")  1px -57px;
+    }
+    .search-md-jipiao  .search-trade a:hover{
+        background-position: -49px -57px;
+    }
+    .search-md-jipiao .search-submit{
+        position: static;
+        float:right;
+        margin-top:15px;
+        margin-right:15px;
+        padding-bottom:2px;
+        padding-top:2px\9;
+        width:96px;
+        height:26px;
+        line-height:24px;
+        border:0px;
+        font-size:14px;
+        font-weight:bold;
+        font-family:"宋体";
+        color:#F5F5F5;
+        cursor:pointer;
+        text-indent: 0px;
+        background:url("http://img03.taobaocdn.com/tps/i3/T1h9vOXgxbXXX.9Mjk-96-100.png") 0 0;
+    }
+    .search-md-jipiao .search-submit:hover{
+        background-position:0 -26px;
+    }
+  .search-md-st  .yui3-acinput-box{
+             line-height:20px;
+         }
+    .search-md-jipiao .search-content .disabled{
+         color:#999;
+    }
+    
+    

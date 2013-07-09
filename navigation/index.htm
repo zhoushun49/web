@@ -1,0 +1,247 @@
+
+<HTML>
+<HEAD>
+<title>国家管理</title>
+<STYLE>
+BODY {
+	SCROLLBAR-FACE-COLOR: #ffffff;
+	SCROLLBAR-HIGHLIGHT-COLOR: #666666; 
+	SCROLLBAR-SHADOW-COLOR: #666666; 
+	SCROLLBAR-3DLIGHT-COLOR: #666666; 
+	SCROLLBAR-ARROW-COLOR: #666666; 
+	SCROLLBAR-TRACK-COLOR: #ffffff; 
+	SCROLLBAR-DARKSHADOW-COLOR: #ffffff; 
+	SCROLLBAR-BASE-COLOR: #ffffff 
+}
+.IconT1 {
+	FONT-SIZE: 11px;
+	COLOR: #333333;
+	LINE-HEIGHT: 20px;
+	FONT-FAMILY: "Arial", "Times New Roman", "宋体", "楷体_GB2312"
+}
+.IconT2 {
+	font-size:10pt;
+	color:blue;
+	border-style:none;
+	background:none;
+}
+.IconT11 {
+	FONT-SIZE: 11px;
+	COLOR: RED;
+	LINE-HEIGHT: 20px;
+	FONT-FAMILY: "Arial", "Times New Roman", "宋体", "楷体_GB2312"
+}
+.IconT21 {
+	font-size:10pt;
+	color:RED;
+	border-style:none;
+	background:none;
+}
+</STYLE>
+
+<script language="javascript">
+
+//'判别滑鼠交集时，底色之变化	
+function setRowStyle(rowID, rowColor) {	
+	for(var i = 0; i < document.getElementById(rowID).children.length; i ++) {
+		var cellItem = document.getElementById(rowID).children.item(i);
+		if(cellItem.tagName.toUpperCase() == "TD") {			
+			if (	(Number(cellItem.getAttribute("rowspan", false)) == 1) || 
+					(!cellItem.getAttribute("rowspan", false))  ) {	
+				cellItem.setAttribute("bgcolor", rowColor, false);
+			}
+		}
+	}
+	//document.getElementById(rowID).style.background = rowColor;
+}
+
+
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link href="css/estyle.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!-- .text-line { font-size: 12px; text-decoration: underline; } -->
+</style>
+</HEAD>
+
+<body background="images/icon_arrow.gif" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align="center">
+<table width="100%" border="0" cellspacing="5">
+	<tr>
+		<td width="50%" align="left">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" class="border_k">
+				<tr>
+					<td>
+						<table width="100%" border="0" align="center" cellpadding="0" cellspacing="1">
+							<tr bgcolor="#ffffff">
+								<td width="100%" height="21" class="tabe03">
+									<div align="left" class="text13">
+										<p><font color="#333333"><img src="images/featured.gif" width="16" height="16" align="middle">
+											</font>
+											<span class="text_12tk">国家管理</span></p>
+									</div>
+								</td>
+							</tr>
+							<TR>
+								<td width="100%" class="tabe02">
+									<table width="100%" border="0" align="center" cellpadding="0" cellspacing="1">
+										<tr>
+											<td width="3%"><span class="text13"><img src="images/right_arrow.gif" width="16" height="16" align="middle"></span></td>
+											<td width="47%" class="text_12tr">B2B站点导航</td>
+											<td width="50%" class="text_12tr"><div align="right">&nbsp;&nbsp;</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</TR>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<form name="form1" id="FORM1" method="post" action="L_natn_cd.asp.htm">
+		
+			
+		<td align="center">&nbsp;</TD>
+		
+	</TR> 
+
+	<tr>
+		<td align="center">
+			<table width="98%" border="0" cellpadding="0" cellspacing="0">
+				<form name="form3" method="post" action="U_all_natn_cd.asp.htm">
+					<TBODY>
+					<tr height="26">
+						<td class="#FFFFFF" colspan="6">
+							<table width="100%" border="0">
+								<tr>
+								
+									<td width="14%">&nbsp;</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td align="center" bgcolor="#666666">
+							<table width="100%" border="0" cellspacing="1" cellpadding="2">
+								<tr class="tabe09" background="f">
+									<td width="100%" colspan=3>
+									<div align="center" class="IconT2" style="CURSOR:pointer" ><b>培训系统</b></div>
+									</td>
+								</tr>
+								<tr class="tabe09" background="f">
+									<td width="20%"><div align="center" class="IconT2" style="CURSOR:pointer" ><b>国家或者地区</b></div></td>
+									<td width="40%"><div align="center" class="IconT2" style="CURSOR:pointer" ><b>前台销售</b></div></td>
+									<td width="40%"><div align="center" class="IconT2" style="CURSOR:pointer" ><b>后台管理</b></div></td>
+								</tr>
+								<tr bgcolor="#e0e0e0" id="NatnID_01" onMouseOver="setRowStyle('NatnID_01', '#f0e68c'); "onmouseout="setRowStyle('NatnID_01', '#e0e0e0');">
+									<td align="center" class="IconT1">中国</td>
+									<td class="IconT1" align="center">-</td>
+									<td class="IconT1" align="center"><a href="http://trb-cn.ce-air.com" target="_blank">trb-cn.ce-air.com</a></td>
+								</tr>
+								<tr  bgcolor="#e0e0e0" id="NatnID_02" onMouseOver="setRowStyle('NatnID_02', '#f0e68c'); "onmouseout="setRowStyle('NatnID_02', '#e0e0e0');">
+									<td align="center" class="IconT1">香港</td>
+									<td class="IconT1" align="center"><a href="http://tra-hk.ce-air.com" target="_blank">tra-hk.ce-air.com</a></td>
+									<td class="IconT1" align="center">
+                                       						<!--<a href="http://trb-hk.ce-air.com" target="_blank">trb-hk.ce-air.com</a>&nbsp;&nbsp;
+										<a href="http://172.20.18.135:8004" target="_blank">trb-hk-j2ee.ce-air.com</a>--> 
+                                       						<a href="http://trb-hk.ce-air.com" target="_blank">trb-hk.ce-air.com</a>&nbsp;&nbsp;
+										<a href="http://172.20.18.135:8884" target="_blank">trb-cn-asp.ce-air.com</a> 
+									</td>
+								</tr>
+								<tr  bgcolor="#e0e0e0" id="NatnID_03" onMouseOver="setRowStyle('NatnID_03', '#f0e68c'); "onmouseout="setRowStyle('NatnID_03', '#e0e0e0');">
+									<td align="center" class="IconT1">日本</td>
+									<td class="IconT1" align="center"><a href="http://tra-jp.ce-air.com" target="_blank">tra-jp.ce-air.com</a></td>
+									<td class="IconT1" align="center"><a href="http://trb-jp.ce-air.com" target="_blank">trb-jp.ce-air.com</a></td>
+								</tr>
+								<tr  bgcolor="#e0e0e0" id="NatnID_04" onMouseOver="setRowStyle('NatnID_04', '#f0e68c'); "onmouseout="setRowStyle('NatnID_04', '#e0e0e0');">
+									<td align="center" class="IconT1">韩国</td>
+									<td class="IconT1" align="center"><a href="http://tra-kr.ce-air.com" target="_blank">tra-kr.ce-air.com</a></td>
+									<td class="IconT1" align="center"><a href="http://trb-kr.ce-air.com" target="_blank">trb-kr.ce-air.com</a></td>
+								</tr>
+								<tr bgcolor="#e0e0e0" id="NatnID_10" onMouseOver="setRowStyle('NatnID_10', '#f0e68c'); "onmouseout="setRowStyle('NatnID_10', '#e0e0e0');">
+									<td align="center" class="IconT1">台湾</td>
+									<td class="IconT1" align="center">-</td>
+									<td class="IconT1" align="center"><a href="http://trb-tw.ce-air.com" target="_blank">trb-tw.ce-air.com</a></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr height="26">
+						<td class="#FFFFFF" colspan="6">
+							<table width="100%" border="0"> 
+								<tr>
+								
+									<td width="14%">&nbsp;</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td align="center" bgcolor="#666666">
+							<table width="100%" border="0" cellspacing="1" cellpadding="2">
+								<tr class="tabe09" background="f">
+									<td width="100%" colspan=3>
+									<div align="center" class="IconT21" style="CURSOR:pointer" ><b>生产系统</b></div>
+									</td>
+								</tr>
+								<tr class="tabe09" background="f">
+									<td width="20%"><div align="center" class="IconT21" style="CURSOR:pointer" ><b>国家或者地区</b></div></td>
+									<td width="40%"><div align="center" class="IconT21" style="CURSOR:pointer" ><b>前台销售</b></div></td>
+									<td width="40%"><div align="center" class="IconT21" style="CURSOR:pointer" ><b>后台管理</b></div></td>
+								</tr>
+								<tr class="border_f" id="NatnID_05" onMouseOver="setRowStyle('NatnID_05', '#f0e68c'); "onmouseout="setRowStyle('NatnID_05', '#FFFFFF');">
+									<td align="center" class="IconT11">中国</td>
+									<td class="IconT11" align="center">-</td>
+									<td class="IconT11" align="center"><a href="http://b2b-cn.ce-air.com" target="_blank">b2b-cn.ce-air.com</a></td>
+								</tr>
+								<tr class="border_f" id="NatnID_06" onMouseOver="setRowStyle('NatnID_06', '#f0e68c'); "onmouseout="setRowStyle('NatnID_06', '#FFFFFF');">
+									<td align="center" class="IconT11">香港</td>
+									<td class="IconT11" align="center"><a href="http://muagent-hk.ce-air.com" target="_blank">muagent-hk.ce-air.com</a></td>
+									<td class="IconT11" align="center">
+										<!--<a href="http://b2b-hk.ce-air.com" target="_blank">b2b-hk.ce-air.com</a>&nbsp;&nbsp;
+										<a href="http://172.20.18.161:8004" target="_blank">b2b-hk-j2ee.ce-air.com</a> -->
+										<a href="http://b2b-hk.ce-air.com" target="_blank">b2b-hk.ce-air.com</a>&nbsp;&nbsp;
+										<a href="http://172.20.18.160:8884" target="_blank">b2b-hk-asp.ce-air.com</a> 
+									</td>
+								</tr>
+								<tr class="border_f" id="NatnID_07" onMouseOver="setRowStyle('NatnID_07', '#f0e68c'); "onmouseout="setRowStyle('NatnID_07', '#FFFFFF');">
+									<td align="center" class="IconT11">日本</td>
+									<td class="IconT11" align="center"><a href="http://muagent-jp.ce-air.com" target="_blank">muagent-jp.ce-air.com</a></td>
+									<td class="IconT11" align="center"><a href="http://b2b-jp.ce-air.com" target="_blank">b2b-jp.ce-air.com</a></td>
+								</tr>
+								<tr class="border_f" id="NatnID_08" onMouseOver="setRowStyle('NatnID_08', '#f0e68c'); "onmouseout="setRowStyle('NatnID_08', '#FFFFFF');">
+									<td align="center" class="IconT11">韩国</td>
+									<td class="IconT11" align="center"><a href="http://muagent-kr.ce-air.com" target="_blank">muagent-kr.ce-air.com</a></td>
+									<td class="IconT11" align="center"><a href="http://b2b-kr.ce-air.com" target="_blank">b2b-kr.ce-air.com</a></td>
+								</tr>
+								<tr class="border_f" id="NatnID_09" onMouseOver="setRowStyle('NatnID_09', '#f0e68c'); "onmouseout="setRowStyle('NatnID_09', '#FFFFFF');">
+									<td align="center" class="IconT11">台湾</td>
+									<td class="IconT11" align="center">-</td>
+									<td class="IconT11" align="center"><a href="http://b2b-tw.ce-air.com" target="_blank">b2b-tw.ce-air.com</a></td>
+								</tr>
+							</table>
+						</td>
+					</tr>					
+
+					<tr height="26">
+						<td class="#FFFFFF" colspan="6">
+							<p align="right" class="text_12t9">&nbsp;</p>
+						</td>
+					</tr>
+
+				
+				</TBODY>
+			</table>
+		</td>
+	</tr>
+	
+</TABLE>
+</div>
+
+<iframe name="iframeNATNNM" src="/include/get_all_natn.asp.htm" style="DISPLAY:none"></iframe>
+</body>
+</HTML>
