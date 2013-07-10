@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
+<title>长龙航空</title>
 <link type="text/css" href="css/global.css" rel="stylesheet"/>
 <link type="text/css" href="css/index.css" rel="stylesheet"/>
 
@@ -34,8 +34,10 @@ KISSY.use('gallery/slide/1.1/',function(S,Slide){
 		var s = new Slide('J_SlideBannar',{
 			autoSlide:true,
 			eventType:'click',
+			navClass:'scrollable-trigger',
 			contentClass:'scrollable-panel',
 			pannelClass:'scrollable-content',
+			selectedClass:'current',
 			triggerSelector:'a',
 			effect:'hSlide',
 			carousel:true
@@ -52,11 +54,12 @@ KISSY.use('gallery/slide/1.1/',function(S,Slide){
 		var s1 = new Slide('J_MainBanner',{
 			autoSlide:true,
 			eventType:'click',
-			contentClass:'scrollable-panel0',
-			pannelClass:'scrollable-content0',
+			navClass:'scrollable-trigger',
+			contentClass:'scrollable-panel',
+			pannelClass:'scrollable-content',
+			selectedClass:'current',
 			triggerSelector:'a',
-			effect:'hSlide',
-			carousel:true
+			effect:'fade'
 		});
 		var ctl = S.one('#J_MainBanner-ctrl');
 
@@ -147,12 +150,12 @@ function selectcity(city){
 <div class="bannerout">
     <a class="prebanner" href="javascript:void(0)" id="prebanner"></a>
     <a class="nextbanner" href="javascript:void(0)" id="nextbanner"></a>
-    <div id="J_MainBanner">
-    	<div class="scrollable-panel0">
-		    <div class="scrollable-content0">
+    <div id="J_MainBanner"  >
+    	<div class="scrollable-panel" style="overflow:hidden;position:relative;width:100%;height:465px">
+		    <div class="scrollable-content"   style="width:100%;">
 			   <div class="bannerimg" style="background:url(image/banner1.jpg) center no-repeat;"><a href="javascript:void(0)" class="bannera"></a></div>
 		   	</div>
-			<div class="scrollable-content0 " style="display:none">
+			<div class="scrollable-content " style="width:100%;display:none">
 			   <div class="bannerimg" style="background:url(image/banner2.jpg) center no-repeat;"><a href="javascript:void(0)" class="bannera"></a></div>
 		   	</div>
 	   	</div>
@@ -164,54 +167,55 @@ function selectcity(city){
             <a href="javascript:void(0)" id="check-link" onclick="selectTab('check-link')" class="check-link">客票验证</a>
             <a href="javascript:void(0)" id="my-link" onclick="selectTab('my-link')" class="my-link">我的长龙</a>    
         </div>
-        <div id="ticker-tab" class="ticker-tab" >
-             <!-- 旅行搜索所有搜索框横向 需要引用这个css文件 -->
-    <div class="search-md search-md-jipiao" id="J_search_tab3" style="padding-top:50px">
-    	<ul class="hd tab-nav" style="display:none">
-            <li class="first-node current">国内机票</li>
-        </ul>
-       <div class="search-content tab-content clearfix">
-            <div class="search-posbox has-trans">  
-                <div class="tab-pannel has-trans">
-                    <form action="" method="get" autocomplete="off" id="J_jipiao_form3">
-                        <ul class="search-type">
-                            <li><input type="radio" class="J_type_radio" name="tripType" value="0" id="J_type_radio1" checked> <label for="J_type_radio1">单程</label></li>
-                            <li><input type="radio" class="J_type_radio" name="tripType" value="1" id="J_type_radio2"> <label for="J_type_radio2">往返</label></li>
-                        </ul>
-                        <ul class="search-condition">
-                            <li>
-                                <label for="J_jipiao_depCity3">出发：</label>
-                                <div class="yui3-acinput-box"><s class="yui3-acinput-icon"></s><input type="text" placeholder="出发城市" id="J_jipiao_depCity3" class="search-input required yui3-aclist-input J_TripCityInput" name="depCityName" data-trade="J_jipiao_arrCity3" aria-autocomplete="list" aria-expanded="false" autocomplete="off" x-webkit-speech="x-webkit-speech"></div>
-                                <input type="hidden" id="J_jipiao_depCity_code3" name="depCity" value="BJS" data-trade="J_jipiao_arrCity_code3">
-                            <div class="yui3-aclist-aria" aria-live="polite" role="status"></div></li>
-                            <li>
-                                <label for="J_jipiao_depDate3">出发时间：</label>
-                                <div id="J_jipiao_depDateBox3" class="cal-input fl">
-                                    <input type="text" data-autotab="J_jipiao_endDate3" placeholder="yyyy-mm-dd" id="J_jipiao_depDate3" class="search-input required J_DateInput" maxlength="10" name="depDate" autocomplete="off">
-                                    <span class="week b"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <label for="J_jipiao_arrCity3" >到达：</label>
-                                <div class="yui3-acinput-box"><s class="yui3-acinput-icon"></s><input type="text" placeholder="到达城市" id="J_jipiao_arrCity3" class="search-input required yui3-aclist-input J_TripCityInput" name="arrCityName" aria-autocomplete="list" aria-expanded="false" autocomplete="off" x-webkit-speech="x-webkit-speech"></div>
-                                <input type="hidden" id="J_jipiao_arrCity_code3" name="arrCity" value="DLC">
-                            <div class="yui3-aclist-aria" aria-live="polite" role="status"></div></li>
-                            <li class="search-backitem disabled">
-                                <label for="J_jipiao_endDate3">返程时间：</label>
-                                <div id="J_jipiao_endDateBox3" class="cal-input fl">
-                                    <input type="text" placeholder="yyyy-mm-dd" id="J_jipiao_endDate3" class="search-input J_endDate J_DateInput" maxlength="10" name="arrDate" autocomplete="off">
-                                    <span class="week e"></span>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="search-trade"><a target="_self" href="javascript:void(0)">互换出发到达城市</a></div>
-                        <input type="submit" value="搜索航班" class="search-submit J_btn">
-                    </form>
-                </div>
-            </div>
-        </div>
+    
+    <div id="ticker-tab" class="ticker-tab" >
+         <!-- 旅行搜索所有搜索框横向 需要引用这个css文件 -->
+	    <div class="search-md search-md-jipiao" id="J_search_tab3" style="padding-top:50px">
+	    	<ul class="hd tab-nav" style="display:none">
+	            <li class="first-node current">国内机票</li>
+	        </ul>
+	       <div class="search-content tab-content clearfix">
+	            <div class="search-posbox has-trans">  
+	                <div class="tab-pannel has-trans">
+	                    <form action="" method="get" autocomplete="off" id="J_jipiao_form3">
+	                        <ul class="search-type">
+	                            <li><input type="radio" class="J_type_radio" name="tripType" value="0" id="J_type_radio1" checked> <label for="J_type_radio1">单程</label></li>
+	                            <li><input type="radio" class="J_type_radio" name="tripType" value="1" id="J_type_radio2"> <label for="J_type_radio2">往返</label></li>
+	                        </ul>
+	                        <ul class="search-condition">
+	                            <li>
+	                                <label for="J_jipiao_depCity3">出发：</label>
+	                                <div class="yui3-acinput-box"><s class="yui3-acinput-icon"></s><input type="text" placeholder="出发城市" id="J_jipiao_depCity3" class="search-input required yui3-aclist-input J_TripCityInput" name="depCityName" data-trade="J_jipiao_arrCity3" aria-autocomplete="list" aria-expanded="false" autocomplete="off" x-webkit-speech="x-webkit-speech"></div>
+	                                <input type="hidden" id="J_jipiao_depCity_code3" name="depCity" value="BJS" data-trade="J_jipiao_arrCity_code3">
+	                            <div class="yui3-aclist-aria" aria-live="polite" role="status"></div></li>
+	                            <li>
+	                                <label for="J_jipiao_depDate3">出发时间：</label>
+	                                <div id="J_jipiao_depDateBox3" class="cal-input fl">
+	                                    <input type="text" data-autotab="J_jipiao_endDate3" placeholder="yyyy-mm-dd" id="J_jipiao_depDate3" class="search-input required J_DateInput" maxlength="10" name="depDate" autocomplete="off">
+	                                    <span class="week b"></span>
+	                                </div>
+	                            </li>
+	                            <li>
+	                                <label for="J_jipiao_arrCity3" >到达：</label>
+	                                <div class="yui3-acinput-box"><s class="yui3-acinput-icon"></s><input type="text" placeholder="到达城市" id="J_jipiao_arrCity3" class="search-input required yui3-aclist-input J_TripCityInput" name="arrCityName" aria-autocomplete="list" aria-expanded="false" autocomplete="off" x-webkit-speech="x-webkit-speech"></div>
+	                                <input type="hidden" id="J_jipiao_arrCity_code3" name="arrCity" value="DLC">
+	                            <div class="yui3-aclist-aria" aria-live="polite" role="status"></div></li>
+	                            <li class="search-backitem disabled">
+	                                <label for="J_jipiao_endDate3">返程时间：</label>
+	                                <div id="J_jipiao_endDateBox3" class="cal-input fl">
+	                                    <input type="text" placeholder="yyyy-mm-dd" id="J_jipiao_endDate3" class="search-input J_endDate J_DateInput" maxlength="10" name="arrDate" autocomplete="off">
+	                                    <span class="week e"></span>
+	                                </div>
+	                            </li>
+	                        </ul>
+	                        <div class="search-trade"><a target="_self" href="javascript:void(0)">互换出发到达城市</a></div>
+	                        <input type="submit" value="搜索航班" class="search-submit J_btn">
+	                    </form>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
     </div>
-        </div>
    <!--         航班动态 -->
         <div class="flight-tab" id="flight-tab">
          <div><label class="lable">航班日期：</label><input type="text"/></div>
@@ -231,7 +235,7 @@ function selectcity(city){
                   <div><label class="lable">会&nbsp;&nbsp;员&nbsp;&nbsp;名：</label><input type="text"/></div>
           <div><label class="lable">登录密码：</label><input type="text"/><a href="javascript:void(0)" class="forget">忘记密码？</a></div>
           <div><label class="lable">验&nbsp;&nbsp;证&nbsp;&nbsp;码：</label><input class="myinput" type="text"/><img alt="验证码"/><a href="javascript:void(0)" class="change">换一张？</a></div>
-          <div><a href="javascript:void(0)" class="search4">fds</a></div>
+          <div><a href="javascript:void(0)" class="search4"></a></div>
         </div>
    </div>
   
@@ -358,21 +362,7 @@ function selectcity(city){
         </tr>
        </table>
       </div>
-      <div>
-        <div class="div1">
-         <p class="blackfont14">关于长龙</p>
-         <div class="imgdiv"><img src="image/pic01.png"/></div>
-         <p class="title" style="width:250px;height:58px;">浙江长龙航空有限公司（简称长龙航空，英文名ZHEJIANG LOONG AIRLINES CO.，LTD.）成立于2011年4月，公司...</p>
-         <a href="javascript:void(0)" class="font14bolda">了解更多&gt;</a>
-        </div>
-         <div class="div2">
-         <p class="blackfont14">公司理念</p>
-         <div class="imgdiv"><img src="image/pic02.png"/></div>
-         <p class="title" style="width:250px;height:58px;">浙江长龙航空有限公司（简称长龙航空，英文名ZHEJIANG LOONG AIRLINES CO.，LTD.）成立于2011年4月，公司...</p>
-         <a href="javascript:void(0)" class="font14bolda">了解更多&gt;</a>
-        </div>
-        <div></div>
-      </div>
+
      </div><!--左边结束-->
      
     </div>
@@ -394,15 +384,32 @@ function selectcity(city){
         <br/>
          <a class="noticea" href="javascript:void(0)">长龙航空首批飞行学员学成归来</a>
          <p class="contentp">2013年2月16日，中国民用航空局批准同意将“长龙国际货运航空有限公司”名称变更为“浙江长龙航空有限公司”，并同意公司在        原有货运业务的基础上增加客运业务。     </p>
+        
+    </div>
+    </div><!--右边结束-->
+     <div class="clearfloat"></div>
+          <div class="news">
+        <div class="div1">
+         <p class="blackfont14">关于长龙</p>
+         <div class="imgdiv"><img src="image/pic01.png"/></div>
+         <p class="title">浙江长龙航空有限公司（简称长龙航空，英文名ZHEJIANG LOONG AIRLINES CO.，LTD.）成立于2011年4月，公司...</p>
+         <a href="javascript:void(0)" class="font14bolda">了解更多&gt;</a>
+        </div>
+         <div class="div2">
+         <p class="blackfont14">公司理念</p>
+         <div class="imgdiv"><img src="image/pic02.png"/></div>
+         <p class="title">浙江长龙航空有限公司（简称长龙航空，英文名ZHEJIANG LOONG AIRLINES CO.，LTD.）成立于2011年4月，公司...</p>
+         <a href="javascript:void(0)" class="font14bolda">了解更多&gt;</a>
+        </div>
         <div  class="div3">
          <p class="blackfont14">标识示意</p>
          <div class="imgdiv"><img src="image/pic03.png"/></div>
-         <p class="title" style="width:250px;height:58px;margin-bottom:10px">浙江长龙航空有限公司（简称长龙航空，英文名ZHEJIANG LOONG AIRLINES CO.，LTD.）成立于2011年4月，公司...</p>
+         <p class="title">浙江长龙航空有限公司（简称长龙航空，英文名ZHEJIANG LOONG AIRLINES CO.，LTD.）成立于2011年4月，公司...</p>
          <a href="javascript:void(0)" class="font14bolda">了解更多&gt;</a>
          </div>
-    </div>
-    </div><!--右边结束-->
-   <div class="clearfloat"></div>
+        <div></div>
+      </div>
+  <div class="clearfloat"></div>
  </div>
 </div>
 
