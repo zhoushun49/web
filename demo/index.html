@@ -34,10 +34,8 @@ KISSY.use('gallery/slide/1.1/',function(S,Slide){
 		var s = new Slide('J_SlideBannar',{
 			autoSlide:true,
 			eventType:'click',
-			navClass:'scrollable-trigger',
 			contentClass:'scrollable-panel',
 			pannelClass:'scrollable-content',
-			selectedClass:'current',
 			triggerSelector:'a',
 			effect:'hSlide',
 			carousel:true
@@ -50,6 +48,24 @@ KISSY.use('gallery/slide/1.1/',function(S,Slide){
 		S.one('#pre').on('click',function(){
 			s.previous();
 		});
+		
+		var s1 = new Slide('J_MainBanner',{
+			autoSlide:true,
+			eventType:'click',
+			contentClass:'scrollable-panel0',
+			pannelClass:'scrollable-content0',
+			triggerSelector:'a',
+			effect:'hSlide',
+			carousel:true
+		});
+		var ctl = S.one('#J_MainBanner-ctrl');
+
+		S.one('#nextbanner').on('click',function(){
+			s1.next();
+		});
+		S.one('#prebanner').on('click',function(){
+			s1.previous();
+		});
 
 	});
 	
@@ -57,20 +73,58 @@ KISSY.use('gallery/slide/1.1/',function(S,Slide){
 
 </script>
 <!--  ↑↑↑↑↑周顺追加↑↑↑↑↑ -->
-
+<script type="text/javascript" >
+var $getObj=function(id){return document.getElementById(id);}
+var tabTeam = [ "ticker","flight","check","my"];
+function selectTab(linkName) {
+	for ( var i = 0; i < tabTeam.length; i++) {
+		var tabLinkName = tabTeam[i]+'-link';
+		var tabName = tabTeam[i]+'-tab';
+		if (linkName == tabLinkName) {
+			$getObj(tabName).style.display = "block";
+			$getObj(tabLinkName).className = tabTeam[i]+'-sel';
+		} else {
+			$getObj(tabName).style.display = "none";
+			$getObj(tabLinkName).className = tabTeam[i]+'-link';
+		}
+		
+	}
+}
+var citytab = [ "sh","routes-div-sh","hz","routes-div-hz"];
+function selectcity(city){
+	for ( var i = 0; i < citytab.length; i++) {
+		var tabLinkName = citytab[i];
+		var tabName = citytab[i + 1];
+		if (city == tabLinkName) {
+			$getObj(tabName).style.display = "block";
+			$getObj(tabLinkName).className = "city-sel";	
+		} else {
+			$getObj(tabName).style.display = "none";
+			$getObj(tabLinkName).className = "city";
+			
+		}
+		i++;
+	}
+}
+</script>
 </head>
 
 <body>
 <!--头部--> 
-<div>
- <div id="header">
-  <div class="logodiv"><a><img src="image/logo.png"/></a></div>
-  <div class="logindiv"><span>欢迎试用！</span><button>登录</button>&nbsp;<a href="javascript:void(0)"> 注册</a></div>
- </div>
-</div>
+<!-- <div> -->
+<!--  <div id="header"> -->
+<!--   <div class="logodiv"><a><img src="image/logo.png"/></a></div> -->
+<!--   <div class="logindiv"> -->
+<!--   <a href="javascript:void(0)">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0)"> 注册</a> -->
+<!--   <p>欢迎使用</p> -->
+<!--   </div> -->
+<!--  </div> -->
+<!-- </div> -->
 <!--导航条区域--> 
 <div class="navoutdiv">
   <div id="navdiv">
+   <div class="logodiv"><a><img src="image/logo.png"/></a></div>
+   <div class="menudiv">
     <ul>
      <li class="selectli"><a href="javascript:void(0)">首页</a></li>
      <li class="lineli"></li>
@@ -82,16 +136,27 @@ KISSY.use('gallery/slide/1.1/',function(S,Slide){
       <li class="lineli"></li>
      <li><a href="javascript:void(0)">信息服务</a></li>
     </ul>
+    </div>
+   <div class="logindiv">
+  <a href="javascript:void(0)">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0)"> 注册</a>
+  <p>欢迎使用！</p>
+  </div>
   </div>
 </div>
 <!--广告区域-->
 <div class="bannerout">
-  <!--切换图片通过修改bannerimg的背景图片样式-->
-   <div class="bannerimg">
-    <a class="prebanner" href="javascript:void(0)"></a>
-    <a href="javascript:void(0)" class="bannera"></a>
-    <a class="nextbanner" href="javascript:void(0)"></a>
-   </div>
+    <a class="prebanner" href="javascript:void(0)" id="prebanner"></a>
+    <a class="nextbanner" href="javascript:void(0)" id="nextbanner"></a>
+    <div id="J_MainBanner">
+    	<div class="scrollable-panel0">
+		    <div class="scrollable-content0">
+			   <div class="bannerimg" style="background:url(image/banner1.jpg) center no-repeat;"><a href="javascript:void(0)" class="bannera"></a></div>
+		   	</div>
+			<div class="scrollable-content0 " style="display:none">
+			   <div class="bannerimg" style="background:url(image/banner2.jpg) center no-repeat;"><a href="javascript:void(0)" class="bannera"></a></div>
+		   	</div>
+	   	</div>
+   	</div>
    <div id="tabdiv">
        <div class="tab-head">
             <a href="javascript:void(0)" id="ticker-link" onclick="selectTab('ticker-link')" class="ticker-sel">机票预定</a>
@@ -99,13 +164,12 @@ KISSY.use('gallery/slide/1.1/',function(S,Slide){
             <a href="javascript:void(0)" id="check-link" onclick="selectTab('check-link')" class="check-link">客票验证</a>
             <a href="javascript:void(0)" id="my-link" onclick="selectTab('my-link')" class="my-link">我的长龙</a>    
         </div>
-        <div id="ticker-tab" class="ticker-tab">
+        <div id="ticker-tab" class="ticker-tab" >
              <!-- 旅行搜索所有搜索框横向 需要引用这个css文件 -->
-    <div class="search-md search-md-jipiao" id="J_search_tab3">
-        <ul class="hd tab-nav">
+    <div class="search-md search-md-jipiao" id="J_search_tab3" style="padding-top:50px">
+    	<ul class="hd tab-nav" style="display:none">
             <li class="first-node current">国内机票</li>
         </ul>
-
        <div class="search-content tab-content clearfix">
             <div class="search-posbox has-trans">  
                 <div class="tab-pannel has-trans">
@@ -148,14 +212,26 @@ KISSY.use('gallery/slide/1.1/',function(S,Slide){
         </div>
     </div>
         </div>
+   <!--         航班动态 -->
         <div class="flight-tab" id="flight-tab">
-        
-        </div>
+         <div><label class="lable">航班日期：</label><input type="text"/></div>
+         <div><label class="lable">条件搜索：</label><input type="text"/></div>
+         <div><label class="lable">航&nbsp;&nbsp;班&nbsp;&nbsp;号：</label><input type="text"/></div>
+         <div><a href="javascript:void(0)" class="quick-search"></a></div>
+		 </div>
+ <!--        客票验证 -->
          <div class="check-tab" id="check-tab">
-        
+          <div><label class="lable">电子票号：</label><input type="text"/></div>
+          <div><label class="lable">旅客姓名：</label><input type="text"/></div>
+          <div><label class="lable">验&nbsp;&nbsp;证&nbsp;&nbsp;码：</label><input class="myinput" type="text"/><img alt="验证码"/></div>
+          <div><a href="javascript:void(0)" class="search3"></a></div>
         </div>
+   <!--      我的长龙 -->
         <div class="my-tab" id="my-tab">
-        
+                  <div><label class="lable">会&nbsp;&nbsp;员&nbsp;&nbsp;名：</label><input type="text"/></div>
+          <div><label class="lable">登录密码：</label><input type="text"/><a href="javascript:void(0)" class="forget">忘记密码？</a></div>
+          <div><label class="lable">验&nbsp;&nbsp;证&nbsp;&nbsp;码：</label><input class="myinput" type="text"/><img alt="验证码"/><a href="javascript:void(0)" class="change">换一张？</a></div>
+          <div><a href="javascript:void(0)" class="search4">fds</a></div>
         </div>
    </div>
   
@@ -176,14 +252,14 @@ KISSY.use('gallery/slide/1.1/',function(S,Slide){
 				       <a href="javascript:void(0)" ><img src="image/banner03.png"/></a>
 			       </div>
 			       <div class="scrollable-content">
-				       <a href="javascript:void(0)" ><img src="image/banner01.png"/></a>
 				       <a href="javascript:void(0)" ><img src="image/banner02.png"/></a>
 				       <a href="javascript:void(0)" ><img src="image/banner03.png"/></a>
+				       <a href="javascript:void(0)" ><img src="image/banner01.png"/></a>
 			       </div>
 			       <div class="scrollable-content">
-				       <a href="javascript:void(0)" ><img src="image/banner01.png"/></a>
-				       <a href="javascript:void(0)" ><img src="image/banner02.png"/></a>
 				       <a href="javascript:void(0)" ><img src="image/banner03.png"/></a>
+				       <a href="javascript:void(0)" ><img src="image/banner02.png"/></a>
+				       <a href="javascript:void(0)" ><img src="image/banner01.png"/></a>
 			       </div>
 	      </div>
       </div>
@@ -191,10 +267,13 @@ KISSY.use('gallery/slide/1.1/',function(S,Slide){
       <div class="clearfloat"></div>
      </div>
      <div>
-      <div class="city-div"><span class="blackfont14">特价机票</span><a class="city-sel" id="sh" href="javascript:void(0)" onclick="selectcity('sh')">上海</a><a class="city" id="hz" href="javascript:void(0)" onclick="selectcity('hz')">杭州</a>        <div class="clearfloat"></div>
+      <div class="city-div"><span class="blackfont14">特价机票</span>
+      <a class="city-sel" id="sh" href="javascript:void(0)" onclick="selectcity('sh')">上海</a>
+      <a class="city" id="hz" href="javascript:void(0)" onclick="selectcity('hz')">杭州</a>        
+      <div class="clearfloat"></div>
       </div>
       <div id="routes-div-sh" class="routes-div-sh">
-       <table cellspacing="1">
+       <table>
         <tr>
         <td>
          <p>上海-长春</p>
@@ -237,7 +316,7 @@ KISSY.use('gallery/slide/1.1/',function(S,Slide){
        </table>
       </div>
         <div id="routes-div-hz" class="routes-div-hz">
-       <table cellspacing="1">
+       <table>
         <tr>
         <td>
          <p>上海-北京</p>
@@ -283,14 +362,14 @@ KISSY.use('gallery/slide/1.1/',function(S,Slide){
         <div class="div1">
          <p class="blackfont14">关于长龙</p>
          <div class="imgdiv"><img src="image/pic01.png"/></div>
-         <p class="title" style="width:250px;height:54px;">浙江长龙航空有限公司（简称长龙航空，英文名ZHEJIANG LOONG AIRLINES CO.，LTD.）成立于2011年4月，公司...</p>
-         <a href="javascript:void(0)" class="font14bolda">了解更多&gt</a>
+         <p class="title" style="width:250px;height:58px;">浙江长龙航空有限公司（简称长龙航空，英文名ZHEJIANG LOONG AIRLINES CO.，LTD.）成立于2011年4月，公司...</p>
+         <a href="javascript:void(0)" class="font14bolda">了解更多&gt;</a>
         </div>
          <div class="div2">
          <p class="blackfont14">公司理念</p>
          <div class="imgdiv"><img src="image/pic02.png"/></div>
-         <p class="title" style="width:250px;height:54px;">浙江长龙航空有限公司（简称长龙航空，英文名ZHEJIANG LOONG AIRLINES CO.，LTD.）成立于2011年4月，公司...</p>
-         <a href="javascript:void(0)" class="font14bolda">了解更多&gt</a>
+         <p class="title" style="width:250px;height:58px;">浙江长龙航空有限公司（简称长龙航空，英文名ZHEJIANG LOONG AIRLINES CO.，LTD.）成立于2011年4月，公司...</p>
+         <a href="javascript:void(0)" class="font14bolda">了解更多&gt;</a>
         </div>
         <div></div>
       </div>
@@ -315,11 +394,11 @@ KISSY.use('gallery/slide/1.1/',function(S,Slide){
         <br/>
          <a class="noticea" href="javascript:void(0)">长龙航空首批飞行学员学成归来</a>
          <p class="contentp">2013年2月16日，中国民用航空局批准同意将“长龙国际货运航空有限公司”名称变更为“浙江长龙航空有限公司”，并同意公司在        原有货运业务的基础上增加客运业务。     </p>
-        <div style="margin-top:45px;margin-left:80px">
+        <div  class="div3">
          <p class="blackfont14">标识示意</p>
          <div class="imgdiv"><img src="image/pic03.png"/></div>
-         <p class="title" style="width:250px;height:54px;">浙江长龙航空有限公司（简称长龙航空，英文名ZHEJIANG LOONG AIRLINES CO.，LTD.）成立于2011年4月，公司...</p>
-         <a href="javascript:void(0)" class="font14bolda">了解更多&gt</a>
+         <p class="title" style="width:250px;height:58px;margin-bottom:10px">浙江长龙航空有限公司（简称长龙航空，英文名ZHEJIANG LOONG AIRLINES CO.，LTD.）成立于2011年4月，公司...</p>
+         <a href="javascript:void(0)" class="font14bolda">了解更多&gt;</a>
          </div>
     </div>
     </div><!--右边结束-->
